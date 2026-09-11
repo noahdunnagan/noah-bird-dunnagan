@@ -1,0 +1,8 @@
+{
+  "name": "noah-bird-dunnagan",
+  "private": true,
+  "description": "Flappy Bird, but the bird is the word Noah.",
+  "scripts": {
+    "start": "python3 -m http.server ${PORT:-4173} --bind 0.0.0.0"
+  }
+}

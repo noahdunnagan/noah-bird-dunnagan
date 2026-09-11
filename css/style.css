@@ -1,0 +1,81 @@
+:root {
+  --sky: #4ec0ca;
+  --ink: #2d3436;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--sky);
+  color: var(--ink);
+  font-family: "Fredoka", "Avenir Next", "Nunito", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body,
+#game-root,
+canvas {
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  position: fixed;
+  inset: 0;
+  overscroll-behavior: none;
+}
+
+#game-root {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#rotate {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4ec0ca 0%, #7ed6df 55%, #ffeaa7 100%);
+  text-align: center;
+  padding: 24px;
+}
+
+#rotate p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#rotate .sub {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  #rotate {
+    display: flex;
+  }
+}
