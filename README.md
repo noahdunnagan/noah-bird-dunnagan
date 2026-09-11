@@ -4,7 +4,9 @@ Flappy Bird, but the bird is the word **Noah**. An iPhone-first web game you can
 
 ## Play
 
-Open the live game in Safari on iPhone, then **Share → Add to Home Screen**.
+Live: https://web-production-59220.up.railway.app
+
+Open it in Safari on iPhone, then **Share → Add to Home Screen**.
 
 Tap anywhere to flap. Best score is saved on the device.
 
