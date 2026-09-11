@@ -213,10 +213,14 @@
   function flap() {
     if (game.state === STATE.DEAD) {
       if (now() - game.deadAt < 520) return;
+      game.pipes = [];
+      game.sparks = [];
+      game.score = 0;
       game.state = STATE.TITLE;
       noah.x = world.w * 0.38;
       noah.y = world.h * 0.46;
       noah.vy = 0;
+      noah.rot = 0;
       return;
     }
     if (game.state === STATE.TITLE) {
@@ -224,7 +228,7 @@
       seedPipes();
       game.state = STATE.PLAYING;
     }
-    noah.vy = unit(-8.2);
+    noah.vy = unit(-9.6);
     playFlap();
   }
 
